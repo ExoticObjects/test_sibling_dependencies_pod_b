@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'test_sibling_dependencies_pod_b_Example', :exclusive => true do
+  pod 'test_sibling_dependencies_pod_b', :path => '../'
+end
+
+target 'test_sibling_dependencies_pod_b_Tests', :exclusive => true do
+  pod 'test_sibling_dependencies_pod_b', :path => '../'
+
+  
+end
