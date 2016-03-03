@@ -1,0 +1,25 @@
+{
+  "name": "test_sibling_dependencies_pod_b",
+  "version": "0.1.0",
+  "summary": "A short description of test_sibling_dependencies_pod_b.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/test_sibling_dependencies_pod_b",
+  "license": "MIT",
+  "authors": {
+    "Exotic Objects": "jim@exoticobjects.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/test_sibling_dependencies_pod_b.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "test_sibling_dependencies_pod_b": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+PODS:
+  - test_sibling_dependencies_pod_b (0.1.0)
+
+DEPENDENCIES:
+  - test_sibling_dependencies_pod_b (from `../`)
+
+EXTERNAL SOURCES:
+  test_sibling_dependencies_pod_b:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  test_sibling_dependencies_pod_b: 772ff5abb2c263fda327bc3764bedb297ec64548
+
+COCOAPODS: 0.39.0
