@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
   s.source_files     = 'Pod/Classes/**/*'
 
   # Listing my framework as a dependency of this pod.
-  # s.dependency 'test_sibling_dependencies_pod_a_framework'
+  s.dependency 'test_sibling_dependencies_pod_a_framework'
 
  end

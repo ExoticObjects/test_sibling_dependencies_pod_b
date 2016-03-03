@@ -1,5 +1,12 @@
 source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/ExoticObjects/test_sibling_dependencies_pod_a_framework.git'
+
 use_frameworks!
+
+pre_install do |installer|
+  # workaround for https://github.com/CocoaPods/CocoaPods/issues/3289
+  def installer.verify_no_static_framework_transitive_dependencies; end
+end
 
 target 'test_sibling_dependencies_pod_b_Example', :exclusive => true do
   pod 'test_sibling_dependencies_pod_b', :path => '../'
